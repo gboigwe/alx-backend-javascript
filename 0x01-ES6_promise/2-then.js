@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable */
-export default function handleResponseFromAPI(promise) {
+function handleResponseFromAPI(promise) {
 	return promise
 	.then(() => {
 		return {
@@ -15,3 +15,4 @@ export default function handleResponseFromAPI(promise) {
 		console.log("Got a response from the API");
 	});
 }
+export default handleResponseFromAPI;
