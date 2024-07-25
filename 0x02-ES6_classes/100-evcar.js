@@ -8,11 +8,6 @@ export default class EVCar extends Car {
     this._range = range;
   }
 
-  // Getter for range
-  get range() {
-    return this._range;
-  }
-
   // Override the Symbol.species to return Car
   static get [Symbol.species]() {
     return Car;
