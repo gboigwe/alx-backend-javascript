@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable */
 export function uploadPhoto() {
   return Promise.resolve({
     status: 200,
