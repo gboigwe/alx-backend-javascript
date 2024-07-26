@@ -11,7 +11,7 @@ function handleProfileSignup() {
         userResponse.lastName
       );
     })
-    .catch(() => {
+    .catch(error => {
       console.log('Signup system offline');
     });
 }
