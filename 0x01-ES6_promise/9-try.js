@@ -6,8 +6,8 @@ export default function guardrall(mathFunction) {
 	try {
 		result = mathFunction();
 	}
-	catch (err) {
-		result = `Error: ${err.message}`;
+	catch (error) {
+		result = `Error: ${error.message}`;
 	}
 	queue.push(result);
 	queue.push('Guardrall was processed');
