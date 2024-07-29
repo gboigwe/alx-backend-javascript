@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable */
-import uploadPhoto from './utils.js';
-import createUser from './utils.js';
+import { uploadPhoto, createUser } from './utils.js';
 
 export default async function asyncUploadUser() {
 	let user;
