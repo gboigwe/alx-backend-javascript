@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable */
-export default function guardrall(mathFunction) {
+export default function guardrail(mathFunction) {
 	const queue = [];
 	let result;
 	try {
@@ -10,7 +10,7 @@ export default function guardrall(mathFunction) {
 		result = `Error: ${error.message}`;
 	}
 	queue.push(result);
-	queue.push('Guardrall was processed');
+	queue.push('Guardrail was processed');
 
 	return queue;
 }
