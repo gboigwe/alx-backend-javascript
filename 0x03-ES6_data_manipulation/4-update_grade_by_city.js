@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable */
-export default function updateStudentGradeByCity(getListStudents, city, newGrades) {
-  return getListStudents
+export default function updateStudentGradeByCity(arr, city, newGrades) {
+  return arr
     .filter(student => student.location === city)
     .map(student => {
-    let grade = newGrades.find(grad => grad.studentId === student.Id);
-    return { ...student, grade: (grade && grade.grade) || 'N/A' };
-  });
+      let grade = newGrades.find(g => g.studentId === student.id);
+      return { ...student, grade: (grade && grade.grade) || 'N/A' };
+    });
 }
