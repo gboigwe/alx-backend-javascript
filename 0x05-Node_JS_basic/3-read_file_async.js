@@ -10,9 +10,9 @@ function countStudents(path) {
       const response = [];
       let msg;
 
-      const data_content = data.toString().split('\n');
+      const content = data.toString().split('\n');
 
-      let students = data_content.filter((item) => item);
+      let students = content.filter((item) => item);
 
       students = students.map((item) => item.split(','));
 
